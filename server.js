@@ -17,9 +17,9 @@ app.use(cors({ origin: 'https://nice-lime-mite-garb.cyclic.app' }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// app.get('/', (req, res) => {
-//   res.send('hellofuckinworld');
-// })
+app.get('/', (req, res) => {
+  res.send('hellofuckinworld');
+})
 
 app.use(router);
 
