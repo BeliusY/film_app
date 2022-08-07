@@ -1,0 +1,24 @@
+POST http://localhost:5000/user/register
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "email": "testuser@mail.com",
+  "password": "password"
+}
+
+###
+
+POST http://localhost:5000/user/login
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "password"
+}
+
+###
+
+GET http://localhost:5000/user/get-user
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZWVlYTg0OWNiOTc5ZDk5MDI4MjlmZCIsImlhdCI6MTY1OTgyNTUyOSwiZXhwIjoxNjU5ODQ3MTI5fQ.tSdh0ZgnjPs4_Rb1-SlbaB38AAIhPo4_eISZ3LtTG1o
