@@ -7,6 +7,7 @@ export const register = async (req, res, next) => {
   try {
     const { username, email, password } = req.body;
     await User.create({ username, email, password });
+    res.header("Access-Control-Allow-Origin", "http://localhost:3000");
     res.status(201).send({
       message: 'Successfully created an account.',
     });
