@@ -18,6 +18,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(router);
 
+app.get('/', (req, res) => {
+  res.send('alu')
+});
+
 app.use(logError);
 app.use(returnError);
 
