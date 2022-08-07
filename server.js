@@ -13,7 +13,7 @@ const port = process.env.PORT || 5000;
 
 databaseConnection();
 
-app.use(cors());
+app.use(cors({ origin: 'https://nice-lime-mite-garb.cyclic.app' }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
