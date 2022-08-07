@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(router);
 
 app.get('/', (req, res) => {
-  res.send('alu')
+  res.send('<h1>AHSHXTEC NARO</h1>')
 });
 
 app.use(logError);
